@@ -35,6 +35,9 @@ app.use(bodyParser.json())
 // Require Notes routes
 require('./app/routes/content.routes.js')(app);
 
+// Require Users routes
+require('./app/routes/users.routes.js')(app);
+
 app.listen(2000,() => {
     console.log("Server running on port 2000");
 });

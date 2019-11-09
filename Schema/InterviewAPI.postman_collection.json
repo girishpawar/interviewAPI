@@ -2,19 +2,74 @@
 	"id": "fdb6b62b-e75e-3f21-6b50-2b19113e5d3f",
 	"name": "InterviewAPI",
 	"description": "",
-	"order": [
-		"928b2d0d-b45b-59ec-a74e-cd08653374bd",
-		"9bb8c77b-259f-595b-ad52-63041118b959",
-		"74e3eb38-e6a2-3417-b036-b9681c017518",
-		"c537ee81-f36e-5f22-52c2-e2a1f8ee8333",
-		"f3c6dc6b-99a3-3ebc-afa4-9ec7a0e01eab"
+	"order": [],
+	"folders": [
+		{
+			"name": "Notes",
+			"description": "",
+			"collectionId": "fdb6b62b-e75e-3f21-6b50-2b19113e5d3f",
+			"order": [
+				"c537ee81-f36e-5f22-52c2-e2a1f8ee8333",
+				"f3c6dc6b-99a3-3ebc-afa4-9ec7a0e01eab",
+				"928b2d0d-b45b-59ec-a74e-cd08653374bd",
+				"9bb8c77b-259f-595b-ad52-63041118b959",
+				"74e3eb38-e6a2-3417-b036-b9681c017518"
+			],
+			"owner": "8911824",
+			"folders_order": [],
+			"id": "0c7f336e-84c6-ca8d-a266-1f0dec74a978"
+		},
+		{
+			"name": "Users",
+			"description": "",
+			"collectionId": "fdb6b62b-e75e-3f21-6b50-2b19113e5d3f",
+			"order": [
+				"f2a32bd3-a795-fbdf-61f9-25e505da354e",
+				"05b98bee-f7d9-3f67-df18-bb0017f4868b"
+			],
+			"owner": "8911824",
+			"folders_order": [],
+			"id": "2ee634b4-3082-734f-a059-21c892eb100f"
+		}
 	],
-	"folders": [],
-	"folders_order": [],
+	"folders_order": [
+		"0c7f336e-84c6-ca8d-a266-1f0dec74a978",
+		"2ee634b4-3082-734f-a059-21c892eb100f"
+	],
 	"timestamp": 1573033440442,
 	"owner": "8911824",
 	"public": false,
 	"requests": [
+		{
+			"id": "05b98bee-f7d9-3f67-df18-bb0017f4868b",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://3.133.104.31:2000/users",
+			"folder": "2ee634b4-3082-734f-a059-21c892eb100f",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1573282581374,
+			"name": "Signup User",
+			"description": "Get All Contents",
+			"collectionId": "fdb6b62b-e75e-3f21-6b50-2b19113e5d3f",
+			"responses": [],
+			"rawModeData": "{ \"email\": \"interview@connvertex.com\", \"notes\": \"InterView@123\"\t}"
+		},
 		{
 			"id": "74e3eb38-e6a2-3417-b036-b9681c017518",
 			"headers": "Content-Type: application/json\n",
@@ -26,7 +81,8 @@
 					"enabled": true
 				}
 			],
-			"url": "http://localhost:2000/notes/5dc2b89692da741ff2763c12",
+			"url": "http://3.133.104.31:2000/notes/5dc649446cda3226b28180cc",
+			"folder": "0c7f336e-84c6-ca8d-a266-1f0dec74a978",
 			"queryParams": [],
 			"preRequestScript": null,
 			"pathVariables": {},
@@ -37,7 +93,7 @@
 			"tests": null,
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1573043947205,
+			"time": 1573276044502,
 			"name": "Delete Note",
 			"description": "Get All Contents",
 			"collectionId": "fdb6b62b-e75e-3f21-6b50-2b19113e5d3f",
@@ -55,7 +111,8 @@
 					"enabled": true
 				}
 			],
-			"url": "http://localhost:2000/notes",
+			"url": "http://3.133.104.31:2000/notes",
+			"folder": "0c7f336e-84c6-ca8d-a266-1f0dec74a978",
 			"queryParams": [],
 			"preRequestScript": null,
 			"pathVariables": {},
@@ -66,11 +123,13 @@
 			"tests": null,
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1573042919975,
+			"time": 1573276053461,
 			"name": "Add New Note",
 			"description": "Get All Contents",
 			"collectionId": "fdb6b62b-e75e-3f21-6b50-2b19113e5d3f",
 			"responses": [],
+			"isFromCollection": true,
+			"collectionRequestId": "928b2d0d-b45b-59ec-a74e-cd08653374bd",
 			"rawModeData": "\t{ \"title\": \"olive\",\n    \"category\": \"Response\",\n    \"notes\": \"SMS Future Auto Loan Account\"\t}"
 		},
 		{
@@ -84,7 +143,8 @@
 					"enabled": true
 				}
 			],
-			"url": "http://localhost:2000/notes/5dc2b89692da741ff2763c12",
+			"url": "http://3.133.104.31:2000/notes/5dc649446cda3226b28180cc",
+			"folder": "0c7f336e-84c6-ca8d-a266-1f0dec74a978",
 			"queryParams": [],
 			"preRequestScript": null,
 			"pathVariables": {},
@@ -95,7 +155,7 @@
 			"tests": null,
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1573043735370,
+			"time": 1573276047386,
 			"name": "Update Note",
 			"description": "Get All Contents",
 			"collectionId": "fdb6b62b-e75e-3f21-6b50-2b19113e5d3f",
@@ -113,7 +173,8 @@
 					"enabled": true
 				}
 			],
-			"url": "http://localhost:2000/notes",
+			"url": "http://3.133.104.31:2000/notes",
+			"folder": "0c7f336e-84c6-ca8d-a266-1f0dec74a978",
 			"queryParams": [],
 			"preRequestScript": null,
 			"pathVariables": {},
@@ -124,12 +185,57 @@
 			"tests": null,
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1573043290252,
+			"time": 1573276050154,
 			"name": "Get all Notes",
 			"description": "Get All Contents",
 			"collectionId": "fdb6b62b-e75e-3f21-6b50-2b19113e5d3f",
 			"responses": [],
 			"rawModeData": "\t{ \"title\": \"olive\",\n    \"category\": \"Response\",\n    \"notes\": \"SMS Future Auto Loan Account\"\t}"
+		},
+		{
+			"id": "f2a32bd3-a795-fbdf-61f9-25e505da354e",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://3.133.104.31:2000/users?email=interview@connvertex.com&password=InterView@123",
+			"folder": "2ee634b4-3082-734f-a059-21c892eb100f",
+			"queryParams": [
+				{
+					"key": "email",
+					"value": "interview@connvertex.com",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "InterView@123",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1573282574403,
+			"name": "Checking User Signin",
+			"description": "Get All Contents",
+			"collectionId": "fdb6b62b-e75e-3f21-6b50-2b19113e5d3f",
+			"responses": [],
+			"rawModeData": "{ \"email\": \"interview@connvertex.com\", \"notes\": \"InterView@123\"\t}"
 		},
 		{
 			"id": "f3c6dc6b-99a3-3ebc-afa4-9ec7a0e01eab",
@@ -143,6 +249,7 @@
 				}
 			],
 			"url": "http://localhost:2000/notes/5dc2b89692da741ff2763c12",
+			"folder": "0c7f336e-84c6-ca8d-a266-1f0dec74a978",
 			"queryParams": [],
 			"preRequestScript": null,
 			"pathVariables": {},
@@ -158,6 +265,8 @@
 			"description": "Get All Contents",
 			"collectionId": "fdb6b62b-e75e-3f21-6b50-2b19113e5d3f",
 			"responses": [],
+			"isFromCollection": true,
+			"collectionRequestId": "f3c6dc6b-99a3-3ebc-afa4-9ec7a0e01eab",
 			"rawModeData": "\t{ \"title\": \"olive\",\n    \"category\": \"Response\",\n    \"notes\": \"SMS Future Auto Loan Account\"\t}"
 		}
 	]
