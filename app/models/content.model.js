@@ -1,9 +1,15 @@
 const mongoose = require('mongoose');
 
 const ContentSchema = mongoose.Schema({
-    title: String,
+    title: {
+        type: String,
+        required: true
+      },
     category: String,
-    notes: String
+    notes: {
+        type: String,
+        required: true
+      }
 }, {
     timestamps: true
 });

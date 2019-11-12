@@ -2,6 +2,10 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 
+const os = require("os");
+const hostname = os.hostname();
+console.log("Hostname is:"+hostname);
+
 // create express app
 const app = express();
 
