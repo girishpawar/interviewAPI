@@ -12,14 +12,15 @@ var dbUrl = '';
 
 // Get the Ip of current host
 ipv4 = internalIp.v4.sync();
-if(ipv4 == '127.0.0.1')
+console.log("Ip is:"+ipv4);
+if(ipv4 == '172.31.25.253')
 {
 	dbUrl = 'mongodb://127.0.0.1:27017/interview';
-	console.log("on Localhost");
+	console.log("on Server DB");
 }else if(ipv4 == '192.168.2.73')
 {
 	dbUrl = 'mongodb://admin:admin123@localhost:27017/interview?authSource=admin'
-	console.log("On remote server");
+	console.log("On localhost server");
 }
 
 
